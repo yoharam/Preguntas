@@ -249,7 +249,7 @@ def main(page: ft.Page):
             ),
             padding=40,
             border_radius=20,
-            border=ft.border.all(2, ft.colors.BLACK),
+            border=ft.border.all(2, ft.Colors.BLACK),
             bgcolor="#FFFFFF",
             alignment=ft.alignment.center_center
         )
