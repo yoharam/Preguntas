@@ -1,6 +1,6 @@
 import flet as ft
 import random
-
+import os
 def main(page: ft.Page):
     # ================= CONFIGURACIÓN =================
     page.title = "Preguntas para conocer a Nelly Noemi"
@@ -258,6 +258,6 @@ def main(page: ft.Page):
 ft.app(
     target=main,
     view=ft.AppView.WEB_BROWSER,
-    port=5000,
+    port=int(os.environ.get("PORT", 5000)),
     host="0.0.0.0"
 )
